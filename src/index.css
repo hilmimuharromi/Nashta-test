@@ -11,3 +11,73 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container{
+  padding-top: 20vh;
+}
+
+.flex {
+  display: flex;
+  justify-content: left;
+}
+.field{
+  margin: 5px;
+}
+
+.layout-add-event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height: 500px;
+  background-color: #f2f2f2;
+  padding: 5px;
+}
+
+.right-content {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin-bottom: 50px;
+}
+
+.right-content img {
+  width: 80%;
+}
+
+.events-layout{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  height: 100%;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+ @media screen and (max-width: 765px) {
+  .right-content{
+    display: none;
+  }
+
+  .events-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    height: 100%;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+
+ }
