@@ -1,10 +1,12 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import CardEvent from '../components/CardEvent'
 
-export default function Home () {
+export default function Home ({events}) {
     return (
         <div className="container">
-            <h2>Events</h2>
+            <div div className = "events-layout" >
+            <CardEvent events={events} />
+            </div>
         </div>
     )
 }

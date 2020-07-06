@@ -58,6 +58,11 @@ code {
   cursor: pointer;
 }
 
+.card-table{
+  width: 100%;
+}
+
+
  @media screen and (max-width: 765px) {
   .right-content{
     display: none;
@@ -79,5 +84,7 @@ code {
     cursor: pointer;
   }
 
-
+  .table td {
+    min-width: 30px;
+  }
  }

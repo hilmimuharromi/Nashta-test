@@ -50,6 +50,12 @@ export default function AddEvent({events}) {
                 id, title, location, participant, date, note, imageUrl: 'https://i.imgur.com/qJBbQrC.png'
             }
             dispatch(allActions.addEvent(payload))
+             setTitle('')
+            setLocation('')
+            setParticipant('')
+            setDate(null)
+            setNote('')
+            setImage('')
         }
     }
 
@@ -67,7 +73,7 @@ export default function AddEvent({events}) {
             animationIn: ["animated", "fadeIn"],
             animationOut: ["animated", "fadeOut"],
             dismiss: {
-                duration: 1000
+                duration: 2000
             }
         });
   }
@@ -110,7 +116,7 @@ export default function AddEvent({events}) {
                         <input className="input is-primary" type="file" placeholder="Image" onChange={(e) => {setImage(e.target.value)}} />
                     </div>
                     <div className = "field" >
-                        <button class="button is-primary">Submit</button>
+                        <button className="button is-primary">Submit</button>
                     </div>
                 </form>
             </div>
