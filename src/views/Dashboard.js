@@ -22,7 +22,6 @@ export default function Home ({events}) {
                     initialData={events}
                     initialPageLength={5}
                     initialSortBy={{ prop: 'id', order: 'ascending' }}
-                    caption={false}
                 />
             </div>
         </div>
