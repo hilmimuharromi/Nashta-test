@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import ReactNotification from 'react-notifications-component';
 import 'react-notifications-component/dist/theme.css';
 import 'react-bulma-components/dist/react-bulma-components.min.css';
+import './App.css'
 import allActions from './stores/actions/index';
 import Navbar from './components/Navbar';
 import AddEvent from './views/AddEvent';
@@ -43,7 +44,7 @@ function App() {
           </Route>
           <Route path="/">
             <Navbar />
-            <Home />
+            <Home events={events} />
           </Route>
         </Switch>
     </Router>

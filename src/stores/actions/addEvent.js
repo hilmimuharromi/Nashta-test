@@ -19,6 +19,7 @@ export default function addEvent(payload) {
             })
             .finally(_ => {
                 dispatch(SET_LOADINGADD(false))
+                dispatch(SET_STATUS('undone'))
             })
     }
 }
